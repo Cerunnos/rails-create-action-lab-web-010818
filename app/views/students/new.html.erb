@@ -1,1 +1,11 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+
+<%= form_for(Student.new) do |f|%>
+  <%=f.text_field :first_name %>
+  <%=f.text_field :last_name %>
+  
+
+  <%=f.submit %>
+<% end %>
+
+<%= link_to 'See all students', students_path %>
